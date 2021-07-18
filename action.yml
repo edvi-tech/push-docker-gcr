@@ -1,17 +1,14 @@
-name: 'Push Docker GCR'
-description: 'Push docker image to Google Container Registry'
+name: 'Push Docker to GCP'
+description: 'Push docker image to Google Artifact Registry'
 branding:
   color: 'green'
   icon: 'box'
 inputs:
   gcr_host:
-    description: 'Google Container Registry Host'
-    default: 'gcr.io'
+    description: 'Google Artifact Registry Host'
+    default: 'asia-south1-docker.pkg.dev'
   image_name:
     description: 'Docker Image Name'
-    required: true
-  image_tag:
-    description: 'Docker Image Tag'
     required: true
 runs:
   using: 'docker'
