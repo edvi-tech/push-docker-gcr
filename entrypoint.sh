@@ -4,6 +4,7 @@ if [ $GITHUB_EVENT_NAME == "release" ]
 then
 	IMAGE_TAG=$GITHUB_REF
 elif [ $GITHUB_EVENT_NAME == "push" ]
+then
 	IMAGE_TAG="latest"
 fi
 
